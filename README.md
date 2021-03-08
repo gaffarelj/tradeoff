@@ -4,7 +4,7 @@ This repository contains code to run trade-offs from and to Excel sheets, as wel
 ## Trade-off setup
 The name of the Excel file that contains the trade-off inputs can be specified in [main.py](main.py). It should have a similar format than the one used in the example *xlsx* file from this repository.
 
-Mind that it is required that the Excel format is similar to the provided [example file](example.xslx). The first column of the header has to be "ID" (capitalised). A range of value can be given in one or more cell by using a dash "val_low-val_high". The row will then be splitted in two: one with the lower values of all cells and one with the highest values, when splitting "-". The new rows IDs will be the old one, with "-L" or "-H" added.
+Mind that it is required that the Excel format is similar to the provided [example file](example.xlsx). The first column of the header has to be "ID" (capitalised). A range of value can be given in one or more cell by using a dash "val_low-val_high". The row will then be splitted in two: one with the lower values of all cells and one with the highest values, when splitting "-". The new rows IDs will be the old one, with "-L" or "-H" added.
 
 The Excel file has to be closed for the code to run.
 
