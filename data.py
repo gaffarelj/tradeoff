@@ -13,6 +13,7 @@ def comp_prop_mass(col_dry, col_wet, df):
 def get_col_config():
 	d_config = [
 		OF.d_col("ID", str, weight=-1), # This column is required
+		OF.d_col("Name", str), # Make sure to specify all columns, even if not used in the tradeoff
 		OF.d_col("Dry Mass [kg]", float),
 		OF.d_col("Wet Mass [kg]", float, limit_value=15000, best=min, weight=5),
 		OF.d_col("Thrust [kN]", float, is_list=True, best=max, weight=3),
