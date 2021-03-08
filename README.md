@@ -13,9 +13,9 @@ The column configuration is done in [data.py](data.py). Please refer to *open_fi
 New columns can be set to be computed, this is done as an example in [data.py](data.py), look for *d_additional*. Mind that the column names are case sensitive.
 
 ## Data normalisation
-The trade-off inputs can be a float, a boolean, or a range of values. They are all normalised, as to limit favouriting very high or low values.
+The trade-off inputs can be a float, a boolean, or a range of values. They are all normalised differently based on their type.
 
-If the input is a float, this is done linearly between the best and worst of a column. If the worst is beyond the limit value, the latter is used as the worst instead, so that the bad concepts are not scored to extremely.
+If the input is a float, this is done linearly between the best and worst of a column. If the worst is beyond the limit value, the latter is used as the worst instead, so that the bad concepts are not scored too extremely.
 
 If the input is a boolean, 0 or 1 is returned.
 
